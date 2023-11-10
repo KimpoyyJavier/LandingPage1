@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MK APPARELS</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* CSS code for hover effect */
+        ul li a:hover {
+            color: #FF5733; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="sec">
+        <header>
+        
+                <div class="big-wrapper light">
+            <a href="#"><img src="mk.png" class="logo" height="121px"></a>
+            
+            </div>
+           <main></main>
+            <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CLOTHING</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" class="btn">Sign up</a></li>
+              </ul>
+              <div class="overlay"></div>
+              
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          
+        </header>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <br>
+            <h2>CLOTHING  STYLE</h2>
+            <P> A clothing style refers to a distinctive and characteristic manner in which clothing and accessories are chosen, combined, and worn to create a particular look or aesthetic. </P>
+            <a href="#" id="soonLink">More Information</a>
+            <div id="hiddenParagraph" style="display: none;">
+            <p>MK Apparels, a fusion of Marjorie and Kim, embodies the essence of collaboration and creativity. Beyond its unique name, this brand represents a harmonious blend of style, quality, and innovation. Each piece of clothing crafted by MK Apparels reflects the combined vision of two passionate individuals, resulting in a distinctive and diverse range of apparel. Marjorie and Kim have meticulously curated their designs, ensuring that each garment not only exudes fashion-forward elegance but also provides comfort and functionality.</p>
+            </div>
+            <div class="subscribeForm">
+                <h3 style="color: #7a1712">You can contact us, send us an email:</h3>
+                <input type="email" id="email" placeholder="Enter your email">
+                <button onclick="subscribe()">Send </button>
+            </div>
+        </div>
+        </div>
+        <div>
+
+        <UL class="sci">
+            <li><a href="#"><img src="fb.png" height="38px" ></a></li>
+            <li><a href="#"><img src="twitter.png" height="38px"></a></li>
+            <li><a href="#"><img src="ig.png" height="38px"></a></li>
+        </UL>
+    </div>
+    <div class="bottom-area">
+        <div class="container">
+          <button class="toggle-btn">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+    </div>
+     <!-- JavaScript Files -->
+
+     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+     <script src="./app.js"></script>
+    </section>
+    <script>
+        
+        function subscribe() {
+            var email = document.getElementById("email").value;
+            alert("Subscribe with Email: " + email);
+        }
+        const soonLink = document.getElementById("soonLink");
+        const hiddenParagraph = document.getElementById("hiddenParagraph");
+
+        soonLink.addEventListener("mouseover", function() {
+         hiddenParagraph.style.display = "block";
+        });
+
+        soonLink.addEventListener("mouseout", function() {
+        hiddenParagraph.style.display = "none";
+        });
+    </script>
+    </div>  
+</main>  
+    
+      </html>
+</body>
+</script>
+</html>    
